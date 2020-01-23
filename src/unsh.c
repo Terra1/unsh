@@ -1,5 +1,5 @@
 #include <stdio.h>
-char termchar = ]
+char termchar = "]";
 
 void inloop() {
 	int ready()
