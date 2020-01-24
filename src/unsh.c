@@ -15,10 +15,10 @@ void inloop() { //Runs the shell.
 }
 
 void exec_cmd() { //Function for executing programs.
-	exec(inputchar, args[]); //Replaces the existing program with the one previously set in inputchar.
+	execvp(inputchar, args[]); //Replaces the existing program with the one previously set in inputchar.
 }
 
-int main {
+int main() {
 	if (pid != 0) { //Checks if the PID is not zero.
 		inloop(); //If the PID is not zero, run the shell using the inloop() function, starting at line 7.
 	}
