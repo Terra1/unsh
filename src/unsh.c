@@ -4,7 +4,7 @@
 #define MAX_PROGRAM_NAME_LENGTH 100
 #define MAX_ARGS_LENGTH 100
 
-const char termchar = '>';
+const char termchar = '>'; //Sets the "terminal character" used at the start of each new command.
 pid_t pid;
 
 char programName[MAX_PROGRAM_NAME_LENGTH];
