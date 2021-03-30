@@ -29,9 +29,9 @@ void exec_cmd() { //Function for executing programs.
 int main() {
 	pid = getpid();
 	if (pid != 0) { //Checks if the PID is not zero.
-		inloop(); //If the PID is not zero, run the shell using the inloop() function, starting at line 7.
+		inloop(); //If the PID is not zero, run the shell using the inloop() function.
 	}
 	else { //If the PID turns out to be zero, assume that this program is a duplicate of the existing shell.
-		exec_cmd(); //Runs the exec_cmd function, starting at line 17.
+		exec_cmd(); //As the PID is zero, the program can safely pass over to exec_cmd(), which allows the shell to run the program set in the variable "programName".
 	}
 }
